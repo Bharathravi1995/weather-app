@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div id="app" class="flex-column">
+      <header class="flex-column"><h1>Weather Application</h1></header>
+      <main class="flex-column align-start">
+        <form>
+          <input type="text" placeholder="Search for a city" autofocus />
+          <button type="submit">Get weather</button>
+          <span class="msg"></span>
+        </form>
+        <div id="weather-card">
+          <div class="flex-column">
+            <h2>
+              <span id="country">Erlangen (DE)</span>
+            </h2>
+            <div class="weather-values">
+              <span>
+                Temperature : <span id="temperature-value">36</span
+                ><sup>°</sup>C</span
+              >
+              <span>Presseure : <span id="pressure-value">2</span>hPa</span>
+              <span>Humidity : <span id="humidity-value">3</span>%</span>
+            </div>
+            <figure id="weather-figure" class="flex-column">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/01d.svg"
+                alt="clear sky"
+              />
+              <figcaption>
+                clear sky
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </main>
+      <footer class="flex-column">
+        <small
+          >Made with <span>❤</span> by
+          <a href="http://georgemartsoukos.com/" target="_blank"
+            >Bharathwaj Ravi</a
+          >
+        </small>
+      </footer>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
