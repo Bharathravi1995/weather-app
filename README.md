@@ -1,2 +1,2 @@
 # weather-app
-Created with CodeSandbox
+A simple weather app made using HTML, CSS and JS
