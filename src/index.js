@@ -12,8 +12,8 @@ const weatherFigureElement = document.getElementById("weather-figure");
 /*SUBSCRIBE HERE FOR API KEY: https://home.openweathermap.org/users/sign_up*/
 const apiKey = "377f4e93015c9918032b8b28bf421eca";
 
-input.addEventListener("keyup", () => {
-  msg.textContent = "";
+input.addEventListener("keyup", (e) => {
+  if (e.key !== "Enter") msg.textContent = "";
 });
 form.addEventListener("submit", (e) => {
   e.preventDefault();
