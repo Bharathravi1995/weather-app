@@ -11,9 +11,11 @@
       <header class="flex-column"><h1>Weather Application</h1></header>
       <main class="flex-column align-start">
         <form>
-          <input type="text" placeholder="Search for a city" autofocus />
+          <div class="input-wrapper">
+            <input type="text" placeholder="Search for a city" autofocus />
+            <small class="msg"></small>
+          </div>
           <button type="submit">Get weather</button>
-          <span class="msg"></span>
         </form>
         <div id="weather-card">
           <div class="flex-column">
@@ -25,7 +27,7 @@
                 Temperature : <span id="temperature-value">36</span
                 ><sup>°</sup>C</span
               >
-              <span>Presseure : <span id="pressure-value">2</span>hPa</span>
+              <span>Pressure : <span id="pressure-value">2</span>hPa</span>
               <span>Humidity : <span id="humidity-value">3</span>%</span>
             </div>
             <figure id="weather-figure" class="flex-column">
@@ -43,7 +45,7 @@
       <footer class="flex-column">
         <small
           >Made with <span>❤</span> by
-          <a href="http://georgemartsoukos.com/" target="_blank"
+          <a href="https://csb-em0wuy.netlify.app/" target="_blank"
             >Bharathwaj Ravi</a
           >
         </small>

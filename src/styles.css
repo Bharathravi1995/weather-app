@@ -5,13 +5,8 @@ body {
 /* RESET STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
-  --bg_main: #0a1f44;
-  --text_light: #fff;
-  --text_med: #53627c;
   --text_dark: #1e2432;
-  --red: #ff1e42;
   --darkred: #c3112d;
-  --orange: #ff8c00;
 }
 
 * {
@@ -90,13 +85,16 @@ main {
 }
 
 form {
-  position: relative;
   display: flex;
   align-items: center;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
+}
+
+form .input-wrapper {
+  position: relative;
 }
 
 form input {
@@ -120,6 +118,7 @@ form .msg {
   left: 0;
   max-width: 450px;
   min-height: 40px;
+  color: var(--darkred);
 }
 
 button {
@@ -161,10 +160,6 @@ footer {
   flex-basis: 15%;
 }
 
-.page-footer span {
-  color: var(--red);
-}
-
 @media screen and (max-width: 600px) {
   form,
   .weather-values {
@@ -195,4 +190,3 @@ footer {
     line-height: 1;
   }
 }
-

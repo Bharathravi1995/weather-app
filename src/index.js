@@ -12,6 +12,9 @@ const weatherFigureElement = document.getElementById("weather-figure");
 /*SUBSCRIBE HERE FOR API KEY: https://home.openweathermap.org/users/sign_up*/
 const apiKey = "377f4e93015c9918032b8b28bf421eca";
 
+input.addEventListener("keyup", () => {
+  msg.textContent = "";
+});
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let inputVal = input.value;
@@ -42,9 +45,9 @@ form.addEventListener("submit", (e) => {
         input.focus();
       })
       .catch(() => {
-        msg.textContent = "Please search for a valid city 😩";
+        msg.textContent = "Please search for a valid city";
       });
   } else {
-    msg.textContent = "Please enter a city name 😩";
+    msg.textContent = "Please enter a city name";
   }
 });
